@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: da_vinci_tool_integration
+    relative_path: urdf/med7.xacro
+  srdf:
+    relative_path: config/med7attached.srdf
+  package_settings:
+    author_name: suphasit
+    author_email: suphasitpp@gmail.com
+    generated_timestamp: 1753360998
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

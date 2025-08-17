@@ -2,6 +2,9 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="med7attached">
     <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
 
+    <!-- Pass tilt angle to the URDF -->
+    <xacro:arg name="tilt_angle" default="0.0" />
+    
     <!-- Import med7attached urdf file -->
     <xacro:include filename="$(find da_vinci_tool_integration)/urdf/med7.xacro" />
 
